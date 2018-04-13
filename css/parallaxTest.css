@@ -1,0 +1,443 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05.04.2018, 14:45:02
+    Author     : Jess
+*/
+
+::root{
+    
+}
+
+html{
+    font-size: 100%;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /*background-color: #111;*/
+    color: #222;
+    font-family: 'Helvetica Neue',Helvetica,Arial;
+    /*background-image: url("https://www.wasi.de/fileadmin/user_upload/General/wallpaper_home/WASI_Gebaeude_neu.jpg");*/
+    background-size: cover;
+}
+
+h1{
+    color: #d90019;
+    font-weight: bolder;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h3{
+    font-weight: normal;
+}
+
+#parallax {
+  perspective: 10px;
+  position: absolute;
+  top: 100px;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective-origin-x: 100%;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin-x: 100%;
+}
+
+.parallax__layer--base {
+  /*transform: translateZ(0) scale(1);*/
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(1.1);
+  z-index: -1;
+}
+.parallax__layer--back2 {
+  transform: translateZ(-2px) scale(1.2);
+  z-index: -2;
+}
+.parallax__layer--back3 {
+  transform: translateZ(-3px) scale(1.3);
+  z-index: -3;
+}
+.parallax__layer--back4 {
+  transform: translateZ(-4px) scale(1.4);
+  z-index: -4;
+}
+.parallax__layer--back5 {
+  transform: translateZ(-5px) scale(1.5);
+  z-index: -5;
+}
+.parallax__layer--back6 {
+  transform: translateZ(-6px) scale(1.6);
+  z-index: -6;
+}
+.parallax__layer--back7 {
+  transform: translateZ(-7px) scale(1.7);
+  z-index: -7;
+}
+.parallax__layer--back8 {
+  transform: translateZ(-8px) scale(1.8);
+  z-index: -8;
+}
+.parallax__layer--back9 {
+  transform: translateZ(-9px) scale(1.9);
+  z-index: -90;
+}
+.parallax__layer--back10 {
+  transform: translateZ(-10px) scale(2.015);
+  z-index: -10;
+}
+.parallax__layer--back20 {
+  transform: translateZ(-20px) scale(3.031);
+  z-index: -20;
+}
+.parallax__layer--back30 {
+  transform: translateZ(-30px) scale(4.0475);
+  z-index: -30;
+  left: -10px;
+}
+
+.test20-1:after{
+    content: '';
+    position: absolute;
+    top: -20vw;
+    left: -50%; 
+    height: 60vw;
+    width: 100vw;
+    background: radial-gradient(ellipse at center, white 0%, rgba(255,250,248,0.6) 30%, transparent 70%);
+    padding: 50px;
+    z-index: -99;
+}
+
+.test20-1{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    height: 300px;
+    width: 50%;
+    padding: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.test20-1>h3{
+    font-size: 1.5vw;
+}
+.test20-1>h1{
+    font-size: 3vw;
+}
+
+.test20-3:after{
+    content: '';
+    position: absolute;
+    top: -14vw;
+    left: -65%; 
+    height: 60vw;
+    width: 120vw;
+    background: radial-gradient(ellipse at center, rgba(255,250,248,0.9) 0%, rgba(255,250,248,0.6) 30%, transparent 70%);
+    padding: 50px;
+    z-index: -99;
+}
+
+.test20-3{
+    position: absolute;
+    text-align: left;
+    top: 90vh;
+    /*top: 800px;*/
+    right: 50px;
+    height: 300px;
+    width: 45%;
+    padding: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.test20-3>h3{
+    font-size: 1.5vw;
+}
+.test20-3>h1{
+    font-size: 3vw;
+}
+
+.test20-4{
+    position: absolute;
+    top: 180vh;
+    height: 300px;
+    width: 100%;
+    background-color: #9C9C9C;
+    margin: 0;
+}
+
+.test0-1{
+    position: relative;
+    top: calc(100vh - 100px);
+    background-color: white;
+    box-shadow: 0 0 16px 4px rgba(0,0,0,0.3);
+    padding: 25px;
+}
+.test0-2{
+    position: relative;
+    top: calc(100vh - 100px + 100vh);
+    color: white;
+    background-color: white;
+    box-shadow: 0 0 16px 4px rgba(0,0,0,0.3);
+    padding-bottom: 100px;
+}
+.test0-2-0{
+    margin: 50px 0;
+    padding: 0 0 200px 0;
+    /*    background-image: url("https://www.wasi.de/fileadmin/_processed_/csm_Slider_Neuigkeiten_5602a4073d.jpg");
+    background-size: cover;*/
+    background-image:url(https://www.wasi.de/fileadmin/_processed_/csm_logistik_slider_94c3b6d47e.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 16px 4px rgba(0,0,0,0.3);
+    /*background-position-y: calc(var(--scrollPosition,-100) * 1px);*/
+    background-attachment: fixed;
+}
+
+.test0-2-1{
+    position: relative;
+    top: 50px;
+    padding: 50px 300px 50px 50px;
+    width: 40vw;
+    background: linear-gradient(to right,rgba(0,0,0,0.4) 80%,transparent);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+.test0-2-1>h2{
+    font-size: 2.5vw;
+}
+
+.test0-2-1>h4{
+    font-size: 1.6vw;
+    font-weight: normal;
+}
+
+.test0-3{
+    position: relative;
+    top: calc(100vh - 100px + 100vh);
+    /*height: 100px;*/
+}
+
+.test0-3-0{
+    background-image: url("https://www.wasi.de/fileadmin/_processed_/csm_Weltkarte_RGB_Grau_38c7976eed.jpg");
+    background-size: cover;
+    box-shadow: inset 0 0 16px 4px rgba(0,0,0,0.3);
+    /*background-position-y: calc(var(--scrollPosition,-100) * 1px);*/
+    background-attachment: fixed;
+}
+
+.test0-3-1{
+    background-image: url("../img/nutzlicheInfos.png");
+    height: 50vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.3));
+    filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.3));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+.test30-0{
+    background-image: url("https://www.wasi.de/fileadmin/user_upload/General/wallpaper_home/WASI_Gebaeude_neu.jpg");
+    height: 1400px;
+    width: 100vw;
+    background-size: cover;
+    background-position: -200px
+}
+
+.test30-1{
+    background-image: url("img/nutzlicheInfos.png");
+    height: 800px;
+    width: 100vw;
+    background-size: cover;
+    background-position: -200px
+}
+
+.topnav{
+    position: fixed;
+    z-index: 99;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), inset 0 -1px 0 0 gray, inset 0 1px 0 0 lightgray;
+}
+
+.topnav>#logo>img{
+    margin: 20px 0 20px 45.5%;
+}
+
+.container-headline{
+    text-transform: uppercase;
+    font-size: 28px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 5px solid #d90019;
+    padding: 25px 0 25px 0;
+}
+
+.fMenu{
+    list-style-type: none;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    font-size: 100%;
+    text-transform: uppercase;
+    background-color: white;
+}
+
+.fMenu>li{
+    display: inline-block;
+    padding: 5px;
+}
+
+.fMenu>li>a{
+    color: black;
+    text-decoration: none;
+}
+
+.fMenu>li>a:hover{
+    color: #d90019;
+    text-decoration: none;
+}
+
+
+/* scroll Keyframes */
+
+.test20-1.kf-0{
+    animation: ease-in-out 1s 1 test20-1-kf-0 normal forwards;
+}
+
+.test20-1.kf-1{
+    animation: ease-in-out 1s 1 test20-1-kf-1 normal forwards;
+}
+
+.test20-3.kf-0{
+    animation: ease-in-out 1s 1 test20-3-kf-0 normal forwards;
+}
+
+.test20-3.kf-1{
+    animation: ease-in-out 1s 1 test20-3-kf-1 normal forwards;
+}
+
+.test20-3.kf-2{
+    animation: ease-in-out 0s 1 test20-3-kf-2 normal forwards;
+}
+
+.test0-3-1.kf-0{
+    animation: ease-in-out 1s 1 test0-3-1-kf-0 normal forwards;
+}
+
+.test0-3-1.kf-1{
+    animation: ease-in-out 1s 1 test0-3-1-kf-1 normal forwards;
+}
+
+.test0-2-1.kf-0{
+    animation: ease-in-out 1s 1 test0-2-1-kf-0 normal forwards;
+}
+
+.test0-2-1.kf-1{
+    animation: ease-in-out 1s 1 test0-2-1-kf-1 normal forwards;
+}
+
+/* Animation Keyframes */
+
+@keyframes test20-1-kf-0{
+    0% {left: -100vw;}
+    100% {left: 50px;}
+}
+
+@keyframes test20-1-kf-1{
+    0% {left: 50px;}
+    100% {left: -100vw;}
+}
+
+@keyframes test20-3-kf-0{
+    0% {right: -100vw;}
+    100% {right: 50px;}
+}
+
+@keyframes test20-3-kf-1{
+    0% {right: 50px;}
+    100% {right: -100vw;}
+}
+
+@keyframes test20-3-kf-2{
+    0% {right: 50px;}
+    100% {right: -100vw;}
+}
+
+@keyframes test0-2-1-kf-0{
+    0% {left: 0px}
+    100% {left: -100vw}
+}
+
+@keyframes test0-2-1-kf-1{
+    0% {left: -100vw}
+    100% {left: 0px}
+}
+
+@keyframes test0-3-1-kf-0{
+    0% {background-position-y: 0px}
+    100% {background-position-y: 700px}
+}
+
+@keyframes test0-3-1-kf-1{
+    0% {background-position-y: 700px}
+    100% {background-position-y: 0px}
+}
+
+/*
+    Chrome specific:
+*/
+
+/* the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    z-index: 999;
+}
+/* the buttons on the scrollbar (arrows pointing upwards and downwards). */
+::-webkit-scrollbar-button {
+    
+}
+
+/* the draggable scrolling handle. */
+::-webkit-scrollbar-thumb {
+    background: #9C9C9C; 
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #d90019; 
+}
+
+/* the track (progress bar) of the scrollbar. */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* the track (progress bar) NOT covered by the handle. */
+::-webkit-scrollbar-track-piece {
+    
+}
+
+/* the bottom corner of the scrollbar, where both horizontal and veritcal scrollbars meet. */
+::-webkit-scrollbar-corner {
+    
+}
+
+/* the draggable resizing handle that appears at the bottom corner of some elements. */
+::-webkit-resizer {
+    
+}

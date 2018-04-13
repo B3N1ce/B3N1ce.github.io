@@ -1,0 +1,40 @@
+:root{
+    --baseTextColor: white;
+    --textBorderColor: darkgray;
+    --textActiveBorderColor: gray;
+}
+
+.input_text{
+    outline: none;
+    height: 25px;
+    border: 1px solid gray;
+    border: 1px solid var(--textBorderColor,gray);
+    background-color: white;
+    background-color: var(--baseTextColor,white);
+    overflow: hidden;
+    padding: 0 5px 0 5px;
+}
+
+.input_text:focus{
+    border-color: darkgray;
+    border-color: var(--textActiveBorderColor,darkgray);
+}
+
+.input_text.bgShadow{
+    box-shadow: inset 2px 2px 4px 0 rgba(0,0,0,0.3);
+}
+
+.input_text.bgRounded{
+    border-radius: 20px;
+    padding: 0 10px 0 10px;
+}
+
+.input_text.bgRounded2{
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+}
+
+.input_text.bgRounded1{
+    border-radius: 3px;
+    padding: 0 10px 0 10px;
+}

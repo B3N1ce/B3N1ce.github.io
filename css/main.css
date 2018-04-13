@@ -1,0 +1,271 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06.03.2018, 10:00:55
+    Author     : Jess
+*/
+
+:root{
+    --gridCellMinHeight: 100px;
+    --gridCellMinWidth: 150px;
+    --testRotation: 0;
+    --testScale: 1;
+    --testTransX: 0;
+    --testTransY: 0;
+    --testBoxColor: #D90019;
+    --testBgColor: #FFFFFF;
+    --testShadowColor: #555555;
+    --testGlowColor: #FF0033;
+}
+
+body{
+    font-family: Arial,TimesNew;
+    color: rgb(30,30,30);
+    /*color: rgb(230,230,230);*/
+    /*background: url("../img/img-noise-256x256.png");*/
+    width: 95%;
+    margin: auto;
+}
+
+.companyLogo{
+    width: 300px;
+    height: 200px;
+}
+
+.questionnaires{
+    width: 80%;
+    margin: 100px auto 50px auto;
+    padding: 20px;
+    box-shadow: inset 0 0 8px 2px rgba(0,0,0,0.2)
+}
+
+
+.gridContainer{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    grid-gap: calc(10px + 2vw);
+    grid-template-columns: repeat(auto-fit,minmax(calc(var(--gridCellMinWidth,200px) + 10vw),1fr));
+    grid-auto-rows: calc(var(--gridCellMinHeight,200px) + 10vw);
+    
+    align-content: center;
+    
+}
+
+ul.gridContainer{
+    list-style-type: none;
+}
+
+ul.container>li{
+/*fallbacks*/
+    display: inline-block;
+    
+/*setup*/      
+    
+    background-color: lightgray;
+}
+
+.link{
+    cursor: pointer;
+}
+
+.gridPanel{
+    transition: all 0.5s;
+    box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.gridPanel:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.2);
+}
+
+.gridPanelImage{
+    transition: all 0.5s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    /*border: 4px solid white;*/
+    box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.5), inset 1px 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.gridPanelImage:hover{
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.2), inset 1px 4px 8px 0 rgba(0,0,0,0.2);
+    /*transform: scale(1.05);*/
+}
+
+.gridPanelImageDesc{
+    transition: all 0.5s;
+    /*display: none;*/
+    width: 100%;
+    height: 30%;
+    transform: scaleY(0);
+    transform-origin: 50% 100%;
+    /*text-align: center;*/
+    position: relative;
+    top: 71%;
+    /*background: rgba(0,0,0,0.3);*/
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7));
+}
+
+.gridPanel:hover .gridPanelImageDesc{
+    /*display: block;*/
+    transform: scaleY(1);
+}
+
+.gridPanelImageDesc div{
+    color: white;
+    padding: 5px;
+}
+
+.bgImg1{
+    background-image: url("../img/images.jpg");
+    
+}
+
+.bgImg2{
+    background-image: url("../img/images (1).jpg");
+    
+}
+
+.bgImg3{
+    background-image: url("../img/lead_960.jpg");
+    
+}
+
+.bgImg4{
+    background-image: url("../img/spring-tree-flowers-meadow-60006.jpeg");
+    
+}
+
+.valueDisplay{
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+    width: 50px;
+}
+
+.valueDisplay:focus{
+    box-shadow: 0 0 0 1px black;
+}
+
+.testContainer{
+    border: 1px solid lightgray;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background-color: var(--testBgColor,#FFFFFF);
+}
+
+.testBlock{
+    position: relative;
+    margin: 50px;
+    height: 100px;
+    width: 100px;
+    top: calc(var(--testTransY,0)*1px);
+    left: calc(var(--testTransX,0)*1px);
+    background: var(--testBoxColor,#D90019);
+    /*transform: scale(var(--testScale,1)) rotate( calc(var(--testRotation,0) * 1deg)) translate(calc(var(--testTransX,0)*1px),calc(var(--testTransY,0)*1px));*/
+    transform: scale(var(--testScale,1)) rotate( calc(var(--testRotation,0) * 1deg));
+    /*box-shadow: 4px 4px 16px 0 rgba(0,0,0,0.5);*/
+}
+
+.testBlock.testBlockShadow{
+    box-shadow: 0px 0px 32px 6px var(--testGlowColor,#FF0033);
+}
+
+.testBlockShadowElement{
+    height: 1px;
+    width: 1px;
+    position: relative;
+    top: calc(100px + 10px * var(--testScale,1) + var(--testTransY,0)*1px);
+    left: calc(100px + 10px * var(--testScale,1) + var(--testTransX,0)*1px);
+    background: rgb(0,0,0);
+    transform: scale(var(--testScale,1)) rotate( calc(var(--testRotation,0) * 1deg));
+}
+
+.testBlockShadowElement.testBlockShadow{
+    box-shadow: 0px 0px 32px 48px var(--testShadowColor,#555555);
+}
+
+.testContainer{
+    
+}
+
+.testTransX{
+    position: relative;
+    left: 0px;
+    top: -20px;
+    width: 200px;
+}
+
+.testTransXContainer{
+    position: relative;
+    top: 25px;
+}
+
+.testTransY{
+    position: relative;
+    transform: rotate(90deg);
+    left: 70px;
+    top: 80px;
+    width: 200px;
+}
+
+.testTransYContainer{
+    position: relative;
+    top: -220px;
+    left: 50px;
+}
+
+.parallaxHeader{
+    background-image: url("http://hdwpro.com/wp-content/uploads/2017/03/Art-Background-Image.png");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0 20px 0;
+}
+
+.parallaxHeader>h1{
+    color: white;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    width: 360px;
+}
+
+.vertSelectDiv{
+    display: inline;
+}
+
+.vertSelectDiv>select{
+    cursor: pointer;
+    padding: 2px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    color: gray;
+    -webkit-appearance: none;
+    appearance: none;
+}
+/*.vertSelectDiv:after{
+    content: 'v';
+    font-size: 10px;
+    padding: 0px 3px;
+    position: relative;
+    margin: 0 0 0 -18px;
+    top: 16px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 16px;
+    width: 20px;
+    color: lightgray;
+}*/
