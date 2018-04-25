@@ -4,268 +4,228 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 06.03.2018, 10:00:55
+    Created on : 24.04.2018, 15:20:11
     Author     : Jess
 */
 
-:root{
-    --gridCellMinHeight: 100px;
-    --gridCellMinWidth: 150px;
-    --testRotation: 0;
-    --testScale: 1;
-    --testTransX: 0;
-    --testTransY: 0;
-    --testBoxColor: #D90019;
-    --testBgColor: #FFFFFF;
-    --testShadowColor: #555555;
-    --testGlowColor: #FF0033;
-}
+@import "reset.css";
 
-body{
-    font-family: Arial,TimesNew;
-    color: rgb(30,30,30);
-    /*color: rgb(230,230,230);*/
-    /*background: url("../img/img-noise-256x256.png");*/
-    width: 95%;
+html{
+    font-family: Calibri,Arial,TimesNew;
+    color: #333;
     margin: auto;
 }
 
-.companyLogo{
-    width: 300px;
-    height: 200px;
-}
-
-.questionnaires{
-    width: 80%;
-    margin: 100px auto 50px auto;
-    padding: 20px;
-    box-shadow: inset 0 0 8px 2px rgba(0,0,0,0.2)
-}
-
-
-.gridContainer{
-    display: grid;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    grid-gap: calc(10px + 2vw);
-    grid-template-columns: repeat(auto-fit,minmax(calc(var(--gridCellMinWidth,200px) + 10vw),1fr));
-    grid-auto-rows: calc(var(--gridCellMinHeight,200px) + 10vw);
-    
-    align-content: center;
-    
-}
-
-ul.gridContainer{
-    list-style-type: none;
-}
-
-ul.container>li{
-/*fallbacks*/
-    display: inline-block;
-    
-/*setup*/      
-    
-    background-color: lightgray;
-}
-
-.link{
-    cursor: pointer;
-}
-
-.gridPanel{
-    transition: all 0.5s;
-    box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.5);
-    width: 100%;
-    height: 100%;
-}
-
-.gridPanel:hover{
-    transform: scale(1.05);
-    box-shadow: 1px 2px 6px rgba(0,0,0,0.2);
-}
-
-.gridPanelImage{
-    transition: all 0.5s;
+body{
+    background-color: gray;
+    background: url("../img/WASI_Gebaeude_neu.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 2px;
-    /*border: 4px solid white;*/
-    box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.5), inset 1px 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.gridPanelImage:hover{
-    box-shadow: 1px 2px 6px rgba(0,0,0,0.2), inset 1px 4px 8px 0 rgba(0,0,0,0.2);
-    /*transform: scale(1.05);*/
-}
-
-.gridPanelImageDesc{
-    transition: all 0.5s;
-    /*display: none;*/
-    width: 100%;
-    height: 30%;
-    transform: scaleY(0);
-    transform-origin: 50% 100%;
-    /*text-align: center;*/
-    position: relative;
-    top: 71%;
-    /*background: rgba(0,0,0,0.3);*/
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7));
-}
-
-.gridPanel:hover .gridPanelImageDesc{
-    /*display: block;*/
-    transform: scaleY(1);
-}
-
-.gridPanelImageDesc div{
-    color: white;
-    padding: 5px;
-}
-
-.bgImg1{
-    background-image: url("../img/images.jpg");
-    
-}
-
-.bgImg2{
-    background-image: url("../img/images (1).jpg");
-    
-}
-
-.bgImg3{
-    background-image: url("../img/lead_960.jpg");
-    
-}
-
-.bgImg4{
-    background-image: url("../img/spring-tree-flowers-meadow-60006.jpeg");
-    
-}
-
-.valueDisplay{
-    border: none;
-    border-radius: 2px;
-    box-shadow: none;
-    width: 50px;
-}
-
-.valueDisplay:focus{
-    box-shadow: 0 0 0 1px black;
-}
-
-.testContainer{
-    border: 1px solid lightgray;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    background-color: var(--testBgColor,#FFFFFF);
-}
-
-.testBlock{
-    position: relative;
-    margin: 50px;
-    height: 100px;
-    width: 100px;
-    top: calc(var(--testTransY,0)*1px);
-    left: calc(var(--testTransX,0)*1px);
-    background: var(--testBoxColor,#D90019);
-    /*transform: scale(var(--testScale,1)) rotate( calc(var(--testRotation,0) * 1deg)) translate(calc(var(--testTransX,0)*1px),calc(var(--testTransY,0)*1px));*/
-    transform: scale(var(--testScale,1)) rotate( calc(var(--testRotation,0) * 1deg));
-    /*box-shadow: 4px 4px 16px 0 rgba(0,0,0,0.5);*/
-}
-
-.testBlock.testBlockShadow{
-    box-shadow: 0px 0px 32px 6px var(--testGlowColor,#FF0033);
-}
-
-.testBlockShadowElement{
-    height: 1px;
-    width: 1px;
-    position: relative;
-    top: calc(100px + 10px * var(--testScale,1) + var(--testTransY,0)*1px);
-    left: calc(100px + 10px * var(--testScale,1) + var(--testTransX,0)*1px);
-    background: rgb(0,0,0);
-    transform: scale(var(--testScale,1)) rotate( calc(var(--testRotation,0) * 1deg));
-}
-
-.testBlockShadowElement.testBlockShadow{
-    box-shadow: 0px 0px 32px 48px var(--testShadowColor,#555555);
-}
-
-.testContainer{
-    
-}
-
-.testTransX{
-    position: relative;
-    left: 0px;
-    top: -20px;
-    width: 200px;
-}
-
-.testTransXContainer{
-    position: relative;
-    top: 25px;
-}
-
-.testTransY{
-    position: relative;
-    transform: rotate(90deg);
-    left: 70px;
-    top: 80px;
-    width: 200px;
-}
-
-.testTransYContainer{
-    position: relative;
-    top: -220px;
-    left: 50px;
-}
-
-.parallaxHeader{
-    background-image: url("http://hdwpro.com/wp-content/uploads/2017/03/Art-Background-Image.png");
-    height: 500px;
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.header{
     margin: 0 0 20px 0;
+    height: 60px;
+    background-color: #d90019;
+    /*background-color: rgba(217,0,25,0.8);*/
+    /*background-color: rgba(255,255,255,0.9);*/
+    width: 100%;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    overflow: hidden;
 }
 
-.parallaxHeader>h1{
-    color: white;
-    margin: 0 auto;
-    padding: 20px 0 0 0;
-    width: 360px;
+.header > h1{
+    padding: 0;
+    margin: 0 0 20px 0;
+    color: #fff;
+    /*color: #333;*/
+    margin: 10px 0 0 30px;
+    height: 100%;
 }
 
-.vertSelectDiv{
-    display: inline;
+.content-wrapper{
+    overflow: hidden;
+    margin: 70px 0 0 330px;
+    padding: 20px;
 }
 
-.vertSelectDiv>select{
+.content-wrapper > h1{
+    margin: 0 0 20px 0;
+    color: #f5f5f5;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.sidemenu{
+    position: fixed;
+    top: 90px;
+    left: 30px;
+    width: 300px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 0 16px 0 rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+ul.sidemenu-content{
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    overflow: auto;
+}
+
+ul.sidemenu-content > li{
+    width: 100%;
+    padding: 10px;
+    margin: 0 -10px;
     cursor: pointer;
-    padding: 2px;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    color: gray;
-    -webkit-appearance: none;
-    appearance: none;
 }
-/*.vertSelectDiv:after{
-    content: 'v';
-    font-size: 10px;
-    padding: 0px 3px;
+
+ul.sidemenu-content > li:hover{
+    background: rgba(255,255,255,0.6);
+}
+
+.searchbar{
+    margin: 20px auto;
+    /*padding: 50px 30px;*/
+    width: 260px;
+/*    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);*/
+}
+
+.searchbar > input[type=text]{
+    margin: 0;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    border: 1px solid #c5c5c5;
+    padding: 0 5px;
+    width: 210px;
+    height: 30px;
+    background: rgba(255,255,255,0.7);
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.searchbar > input[type=submit]{
     position: relative;
-    margin: 0 0 0 -18px;
-    top: 16px;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    height: 16px;
-    width: 20px;
-    color: lightgray;
-}*/
+    top: -1px;
+    /*left: -5px;*/
+    border-radius: 0 10px 10px 0;
+    margin: 0;
+    outline: none;
+    background: #d90019;
+    background: radial-gradient(circle at 50% 150%, #a00019 70%, #d90019 80%);
+    color: white;
+    width: 30px;
+    height: 32px;
+    border: 1px solid darkgray;
+    padding: 0;
+    cursor: pointer;
+    box-shadow: inset 0 -2px 8px rgba(0,0,0,0.5);
+}
+
+.searchbar > input[type=submit]:hover{
+    background: gray;
+    background: radial-gradient(circle at 50% 0%, #888 50%, #bbb 80%);
+    box-shadow: inset 0 2px 16px rgba(0,0,0,0.7);
+}
+
+.blurry-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: gray;
+    background: url("../img/WASI_Gebaeude_neu.jpg");
+    background-size: cover;
+    background-position-y: -50px;
+    width: 100%;
+    height: 100%;
+    filter: blur(20px) brightness(1.1);
+}
+
+.cardTable{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 16px rgba(0,0,0,0.5);
+    margin: 0 0 50px 0;
+}
+
+.cardTable > table{
+    border-collapse: collapse;
+    border-style: hidden;
+    width: 100%;
+}
+
+.cardTableItem{
+    border: 1px solid darkgray;
+    margin: auto;
+}
+
+.cardTableItem:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.cardTableItem-Icon{
+    border-radius: 50%;
+    margin: 10px 20px 10px 10px;
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.cardTableItem-Text{
+    display: block;
+    vertical-align: middle;
+    margin: 20px;
+}
+
+.cardTableItem-Desc{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cardTableItem-Count{
+    
+}
+.cardTableItem-Count-Number{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 18px;
+    color: #d90019;
+}
+.cardTableItem-Count-Unit{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.console{
+    display:none;
+    position: fixed;
+    bottom: 0;
+    /*bottom: -35%;*/
+    left: 0;
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(220,220,220);
+    background-color: rgb(30,30,30);
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    resize: none;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,0.5);
+    overflow: hidden;
+}

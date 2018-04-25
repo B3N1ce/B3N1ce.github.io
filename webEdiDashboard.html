@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>WASI.web Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="sidemenu">
+            <form class="searchbar">
+                <input type="text" value="" placeholder="Suchbegriff eingeben" />
+                <input type="submit" value=">" />
+            </form>
+            <div class="blurry-bg"></div>
+            <ul class="sidemenu-content">
+                <li>EDI</li>
+                <li>Webshop</li>
+                <li>App</li>
+                <li>Kanban</li>
+                <li>Lieferantenportal</li>
+                <li>externe Links</li>
+            </ul> 
+        </div>
+        <div class="header">
+            <!--<div class="blurry-bg"></div>-->
+            <h1>WASI.web Dashboard</h1>
+            <div class="header-menu">
+                
+            </div>
+        </div>
+        
+        <div class="content-wrapper">
+            <h1>Übersicht</h1>
+            <div class="cardTable">
+                <div class="blurry-bg"></div>
+                <table>
+                    <tr>
+                        <td class="cardTableItem">
+                            <a href="webEdiDashboard.html">
+                                <img class="cardTableItem-Icon" src="img/if_Retract_2001886.png"></img>
+                                <div class="cardTableItem-Text">
+                                    <div class="cardTableItem-Desc">Eingang</div>
+                                    <div class="cardTableItem-Count">
+                                        <div class="cardTableItem-Count-Number">??</div>
+                                        <div class="cardTableItem-Count-Unit">this month</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </td>
+                        <td class="cardTableItem">
+                            <a href="webEdiDashboard.html">
+                                <img class="cardTableItem-Icon" src="img/if_Expand_2001869.png"></img>
+                                <div class="cardTableItem-Text">
+                                    <div class="cardTableItem-Desc">Ausgang</div>
+                                    <div class="cardTableItem-Count">
+                                        <div class="cardTableItem-Count-Number">??</div>
+                                        <div class="cardTableItem-Count-Unit">this month</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </td>
+                        <td class="cardTableItem">
+                            <a href="webEdiDashboard.html">
+                                <img class="cardTableItem-Icon" src="img/if_Cross_2001870.png"></img>
+                                <div class="cardTableItem-Text">
+                                    <div class="cardTableItem-Desc">Fehler</div>
+                                    <div class="cardTableItem-Count">
+                                        <div class="cardTableItem-Count-Number">??</div>
+                                        <div class="cardTableItem-Count-Unit">this month</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <h1>EDI Projekte</h1>
+        </div>
+        <textarea class="console">%user%\ &gt; </textarea>  
+    </body>
+</html>
