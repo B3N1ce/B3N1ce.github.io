@@ -1,0 +1,13 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03.05.2018, 15:10:46
+    Author     : Jess
+*/
+
+@import "PCgt1120.css" only screen and (min-width: 1120px);
+@import "PCgt700.css" only screen and (min-width: 700px) and (max-width: 1119px);
+@import "lt700.css" only screen and (max-width: 699px);
