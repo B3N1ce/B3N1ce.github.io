@@ -241,7 +241,7 @@ ul.header-user-menu > li > a > div:hover{
     position: fixed;
     top: 60px;
     left: 0;
-    height: 70px;
+    height: 50px;
     right: 0;
     background: #ccc;
     overflow: hidden;
@@ -268,7 +268,7 @@ ul.header-user-menu > li > a > div:hover{
 .sidemenu-content > div{
     transition: .2s;
     display: inline-block;
-    height: 50px;
+    height: 45px;
 }
 
 .sidemenu-content > div > a > div{
