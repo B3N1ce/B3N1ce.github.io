@@ -10,40 +10,50 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" href="img/Icon_transparent.ico" />
     </head>
     <body>
-        <div class="sidemenu">
+        <div class="sidemenu blurry-bg">
+            <h1>EDI</h1>
             <form class="searchbar">
                 <input type="text" value="" placeholder="Suchbegriff eingeben" />
-                <input type="submit" value=">" />
+                <input type="submit" value="►" />
             </form>
-            <div class="blurry-bg"></div>
             <ul class="sidemenu-content">
-                <li>EDI</li>
-                <li>Webshop</li>
-                <li>App</li>
-                <li>Kanban</li>
-                <li>Lieferantenportal</li>
-                <li>externe Links</li>
-            </ul> 
+                <li class="list-element--active"><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--big" src="img/if_cluster-data-group-organize_2205240.png" />EDI</div></a></li>
+                <li><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--big" src="img/if_bag_514940.png" />Webshop</div></a></li>
+                <li><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--big" src="img/if_smartphone-01_186385.png" />App</div></a></li>
+                <li><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--big" src="img/if_app_type_catalog_512px_GREY_339935.png" />Kanban</div></a></li>
+                <li><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--big" src="img/if_truck_1608963.png" />Lieferantenportal</div></a></li>
+                <li><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--big" src="img/if_link5_216660.png" />externe Links</div></a></li>
+            </ul>
         </div>
         <div class="header">
-            <!--<div class="blurry-bg"></div>-->
-            <h1>WASI.web Dashboard</h1>
-            <div class="header-menu">
-                
+            <h1><img src="img/wasi_logo_divisions_transparent.png" /><span class="h1--gray">.web</span> Dashboard</h1>
+            <div class="header-user">
+                <img class="header-user-image" src="img/user_unknownProfilePic.png" />
+                <div class="header-user-text">Admin</div>
+                <div class="header-user-menuButton"></div>
+                <ul class="header-user-menu">
+                    <li><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--small" src="" />Kontoeinstellungen</div></a></li>
+                    <li><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--small" src="" />menuItem2</div></a></li>
+                    <li><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--small" src="" />menuItem3</div></a></li>
+                    <li class="list-element--active"><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--small" src="img/if_gnome-session-logout_30682.png" />Logout</div></a></li>
+                </ul>
             </div>
+            <!-- <div class="header-menu"> -->
+                <!-- <div class="blurry-bg"></div> -->
+            <!-- </div> -->
         </div>
         
         <div class="content-wrapper">
-            <h1>Übersicht</h1>
-            <div class="cardTable">
-                <div class="blurry-bg"></div>
+            <!-- <h1>Übersicht</h1> -->
+            <div class="cardTable blurry-bg">
                 <table>
                     <tr>
                         <td class="cardTableItem">
                             <a href="webEdiDashboard.html">
-                                <img class="cardTableItem-Icon" src="img/if_Retract_2001886.png"></img>
+                                <img class="cardTableItem-Icon" src="img/if_Retract_2001886.png" />
                                 <div class="cardTableItem-Text">
                                     <div class="cardTableItem-Desc">Eingang</div>
                                     <div class="cardTableItem-Count">
@@ -55,7 +65,7 @@ and open the template in the editor.
                         </td>
                         <td class="cardTableItem">
                             <a href="webEdiDashboard.html">
-                                <img class="cardTableItem-Icon" src="img/if_Expand_2001869.png"></img>
+                                <img class="cardTableItem-Icon" src="img/if_Expand_2001869.png" />
                                 <div class="cardTableItem-Text">
                                     <div class="cardTableItem-Desc">Ausgang</div>
                                     <div class="cardTableItem-Count">
@@ -67,7 +77,7 @@ and open the template in the editor.
                         </td>
                         <td class="cardTableItem">
                             <a href="webEdiDashboard.html">
-                                <img class="cardTableItem-Icon" src="img/if_Cross_2001870.png"></img>
+                                <img class="cardTableItem-Icon" src="img/if_Cross_2001870.png" />
                                 <div class="cardTableItem-Text">
                                     <div class="cardTableItem-Desc">Fehler</div>
                                     <div class="cardTableItem-Count">
@@ -80,8 +90,155 @@ and open the template in the editor.
                     </tr>
                 </table>
             </div>
-            <h1>EDI Projekte</h1>
+            <h1>Top Projekte</h1>
+            <div class="cardTableSeparate">
+                <table>
+                    <tr>
+                        <td class="cardTableSeparateItem blurry-bg">
+                            <div>
+                                <a href="webEdiDashboard.html">
+                                    <div class="cardTableItem-Text">
+                                        <div class="cardTableItem-Desc">Test</div>
+                                        <div class="cardTableItem-Count">
+                                            <div class="cardTableItem-Count-Number">??</div>
+                                            <div class="cardTableItem-Count-Unit">empfangen</div>
+                                        </div>
+                                        <div class="cardTableItem-Count">
+                                            <div class="cardTableItem-Count-Number">??</div>
+                                            <div class="cardTableItem-Count-Unit">Ausgang</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </td>
+                        <td class="cardTableSeparateItem blurry-bg">
+                            <div>
+                                <a href="webEdiDashboard.html">
+                                    <div class="cardTableItem-Text">
+                                        <div class="cardTableItem-Desc">Testkunde Langername</div>
+                                        <div class="cardTableItem-Count">
+                                            <div class="cardTableItem-Count-Number">??</div>
+                                            <div class="cardTableItem-Count-Unit">empfangen</div>
+                                        </div>
+                                        <div class="cardTableItem-Count">
+                                            <div class="cardTableItem-Count-Number">??</div>
+                                            <div class="cardTableItem-Count-Unit">Ausgang</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </td>
+                        <td class="cardTableSeparateItem blurry-bg">
+                            <div>
+                                <a href="webEdiDashboard.html">
+                                    <div class="cardTableItem-Text">
+                                        <div class="cardTableItem-Desc">Testkunde Nochviellängerername</div>
+                                        <div class="cardTableItem-Count">
+                                            <div class="cardTableItem-Count-Number">??</div>
+                                            <div class="cardTableItem-Count-Unit">empfangen</div>
+                                        </div>
+                                        <div class="cardTableItem-Count">
+                                            <div class="cardTableItem-Count-Number">??</div>
+                                            <div class="cardTableItem-Count-Unit">Ausgang</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cardTableSeparateItem blurry-bg">
+                            <div>
+                                <a href="webEdiDashboard.html">
+                                    <div class="cardTableItem-Text">
+                                        <div class="cardTableItem-Desc">Testkunde Nochviellängerername</div>
+                                        <div class="cardTableItem-Count">
+                                            <div class="cardTableItem-Count-Number">??</div>
+                                            <div class="cardTableItem-Count-Unit">empfangen</div>
+                                        </div>
+                                        <div class="cardTableItem-Count">
+                                            <div class="cardTableItem-Count-Number">??</div>
+                                            <div class="cardTableItem-Count-Unit">Ausgang</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </td>
+                        <td class="cardTableSeparateItem blurry-bg">
+                            <div>
+                                <a href="webEdiDashboard.html">
+                                    <div class="cardTableItem-Text">
+                                        <div class="cardTableItem-Desc">Testkunde Langername</div>
+                                        <div class="cardTableItem-Count">
+                                            <div class="cardTableItem-Count-Number">??</div>
+                                            <div class="cardTableItem-Count-Unit">empfangen</div>
+                                        </div>
+                                        <div class="cardTableItem-Count">
+                                            <div class="cardTableItem-Count-Number">??</div>
+                                            <div class="cardTableItem-Count-Unit">Ausgang</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </td>
+                        <td class="cardTableSeparateItem blurry-bg">
+                            <div>
+                                <a href="webEdiDashboard.html">
+                                    <div class="cardTableItem-Text">
+                                        <div class="cardTableItem-Desc">Test</div>
+                                        <div class="cardTableItem-Count">
+                                            <div class="cardTableItem-Count-Number">??</div>
+                                            <div class="cardTableItem-Count-Unit">empfangen</div>
+                                        </div>
+                                        <div class="cardTableItem-Count">
+                                            <div class="cardTableItem-Count-Number">??</div>
+                                            <div class="cardTableItem-Count-Unit">Ausgang</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <h1>Alle Projekte</h1>
+            <table class="cardTable blurry-bg">
+                <tr><th>Name</th><th>Eingang</th><th>Ausgang</th><th>Fehler</th><th>Status</th></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+                <tr><td>testPartner</td><td>??</td><td>??</td><td>??</td><td>aktiv</td></tr>
+            </table>
         </div>
-        <textarea class="console">%user%\ &gt; </textarea>  
+        <textarea class="console">%user%\ &gt; </textarea> 
+        
+        <!-- Script Section -->
+        <script type="text/javascript" src="js/IEfixedScrollFix.js"></script>
     </body>
 </html>
