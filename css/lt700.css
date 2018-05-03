@@ -224,22 +224,6 @@ ul.header-user-menu > li > a > div:hover{
     text-indent: 10px;
 }
 
-.header-menu{
-    position: fixed;
-    top: 60px;
-    left: 0;
-    height: 60px;
-    width: 100%;
-    background: #ccc;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: .5s;
-}
-
-.header:hover > .header-menu{
-    
-}
-
 .content-wrapper{
     overflow: hidden;
     margin: 120px 0 0 0;
@@ -257,8 +241,8 @@ ul.header-user-menu > li > a > div:hover{
     position: fixed;
     top: 60px;
     left: 0;
-    height: 60px;
-    width: 100%;
+    height: 70px;
+    right: 0;
     background: #ccc;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -276,20 +260,23 @@ ul.header-user-menu > li > a > div:hover{
 .sidemenu-content{
     transition: .5s;
     text-shadow: 0 0 16px white;
-    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .sidemenu-content > div{
     transition: .2s;
-    float: left;
+    display: inline-block;
+    height: 50px;
 }
 
 .sidemenu-content > div > a > div{
-    padding: 12px 0;
-    width: 60px;
-    height: 60px;
+    padding: 5px 5px;
+    height: 35px;
+    width: 35px;
     margin: 0;
-    transition: background .2s;
+    transition: .2s;
 }
 
 .sidemenu-content > div > a > div > span{
@@ -301,8 +288,8 @@ ul.header-user-menu > li > a > div:hover{
     margin: auto;
 }
 
-.sidemenu-content > div:hover{
-    background: rgba(255,255,255,1);
+.sidemenu-content > div:hover > a > div{
+    background: #777;
 }
 
 .list-element--active > a > div:hover{
