@@ -55,22 +55,22 @@ a{
 }
 
 .header > h1 > img{
-    height: 40px;
-    vertical-align: text-top;
+    height: 30px;
+    vertical-align: text-bottom;
     margin-right: 5px; 
 }
 
 .header > h1{
     padding: 0;
     display: block;
-    margin: 10px 0 0 10px;
+    margin: 15px 0 0 10px;
     /*margin: 10px 30px 0 30px;*/
     /*color: #fff;*/
     color: #3c434f;
     height: 100%;
     float: left;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 18px;
     transition: .5s;
 }
 
