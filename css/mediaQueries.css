@@ -8,6 +8,12 @@ and open the template in the editor.
     Author     : Jess
 */
 
-@import "PCgt1120.css" only screen and (min-width: 1120px);
-@import "PCgt700.css" only screen and (min-width: 700px) and (max-width: 1119px);
-@import "lt700.css" only screen and (max-width: 699px);
+@import "PCgt1200.css"  only screen and (min-width: 1200px);
+@import "PCgt1000.css"   only screen and (min-width: 1000px) and  (max-width: 1199px);
+@import "PCgt700.css"   only screen and (min-width: 700px) and  (max-width: 999px);
+@import "lt700.css"     only screen and (min-width: 471px) and  (max-width: 699px);
+@import "lt470.css"     only screen and                         (max-width: 470px);
+
+html{
+    line-height: normal;
+}

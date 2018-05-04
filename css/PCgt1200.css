@@ -71,7 +71,6 @@ a{
     float: left;
     font-weight: normal;
     font-size: 29px;
-    transition: .5s;
 }
 
 .h1--red{
@@ -98,7 +97,7 @@ a{
     width: 250px;
     height: 50px;
     margin: 4px;
-    right: 5px;
+    right: 20px;
     border-radius: 30px;
     border: 1px solid darkgray;
     cursor: default;
@@ -181,7 +180,7 @@ a{
     position: fixed;
     display: inline-block;
     z-index: 99;
-    right: 9px;
+    right: 24px;
     top: 55px;
     /*display: none;*/
     margin: 0;
@@ -241,8 +240,8 @@ ul.header-user-menu > li > a > div:hover{
 
 .content-wrapper{
     overflow: hidden;
-    margin: 60px 0 0 260px;
-    padding: 10px;
+    margin: 60px 0 0 330px;
+    padding: 30px;
     transition: .5s;
 }
 
@@ -255,17 +254,16 @@ ul.header-user-menu > li > a > div:hover{
 .sidemenu{
     position: fixed;
     z-index: 99;
-    top: 70px;
-    bottom: 10px;
-    left: 10px;
-    width: 250px;
+    top: 90px;
+    bottom: 30px;
+    left: 30px;
+    width: 300px;
     border-radius: 10px;
     /*background: rgba(255,255,255,0.6);*/
     /*background: repeating-linear-gradient(to bottom right,rgba(255,255,255,.6) 25%,rgba(255,255,255,0.8) 30%, rgba(255,255,255,.6) 60%);*/
     box-shadow: 0 0 16px 0 rgba(0,0,0,0.5), inset 0 0 16px 0 rgba(255,255,255,0.8);
     overflow: hidden;
     transition: .5s;
-    font-size: 14px;
 }
 
 .sidemenu h1{
@@ -276,7 +274,7 @@ ul.header-user-menu > li > a > div:hover{
 }
 
 .sidemenu-content{
-    margin: auto;
+    margin: 0;
     padding: 0;
     list-style-type: none;
     overflow-x: hidden;
@@ -316,7 +314,7 @@ ul.header-user-menu > li > a > div:hover{
 
 .searchbar{
     margin: 20px auto;
-    width: 230px;
+    width: 260px;
 }
 
 .searchbar > input[type=text]{
@@ -325,7 +323,7 @@ ul.header-user-menu > li > a > div:hover{
     outline: none;
     border: 1px solid #c5c5c5;
     padding: 0 5px;
-    width: 180px;
+    width: 210px;
     height: 30px;
     background: rgba(255,255,255,0.2);
     box-shadow: inset 0 2px 8px rgba(0,0,0,0.2);
@@ -366,14 +364,14 @@ ul.header-user-menu > li > a > div:hover{
 .cardTableSeparate{
     transition: .5s;
     width: 100%;
-    width: calc(100% + 10px);
-    margin: 0 0 50px -5px;
+    width: calc(100% + 60px);
+    margin: 0 0 0 -30px;
 }
 
 .cardTableSeparate > table{
     width: 100%;
     border-collapse: separate;
-    border-spacing: 5px;
+    border-spacing: 30px;
     transition: .5s;
 }
 
@@ -422,7 +420,6 @@ td a{
 }
 
 .cardTableItem{
-    /*display: block;*/
     border: 1px solid darkgray;
     margin: 0;
     transition: .2s;
@@ -431,7 +428,6 @@ td a{
     /*background: linear-gradient(to bottom right,rgba(255,255,255,0) 40%,rgba(255,255,255,0.8) 45%, rgba(255,255,255,0));*/
     text-shadow: 0 0 16px white;
     box-shadow: 0 0 8px 0 rgba(0,0,0,0), inset 0 0 16px 0 rgba(255,255,255,0.8);
-    text-align: center;
 }
 
 .cardTableItem:hover{
@@ -441,28 +437,30 @@ td a{
 
 .cardTableItem-Icon{
     border-radius: 50%;
-    margin: 10px 0 0 0;
-    width: 60px;
-    height: 60px;
+    margin: 10px 20px 10px 10px;
+    width: 80px;
+    height: 80px;
+    float: left;
     box-shadow: 0 0 32px rgba(0,0,0,0.5);
 }
 
 .cardTableItem-Text{
     display: block;
     vertical-align: middle;
-    margin: 10px 10px 10px 20px;
-    text-align: left;
+    margin: 20px;
+    
     /*white-space: nowrap;*/ 
+    overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .cardTableItem-Desc{
     font-weight: bold;
     font-size: 20px;
+    margin-bottom: 10px;
     /*white-space: nowrap;*/ 
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: 10px;
     height: 60px;
     padding: 5px;
     margin: -5px;
@@ -488,6 +486,7 @@ td a{
 
 table.cardTable{
     cursor: default;
+    margin-top: 50px;
     padding: 20px;
 /*    background: white;
     background: rgba(255,255,255,0.7);*/
@@ -548,8 +547,8 @@ table.cardTable tr td:hover{
 }
 
 .imgLogo-inline--big{
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     padding: 2px;
     vertical-align: middle;
     margin: 0 20px 0 0;
@@ -560,7 +559,6 @@ table.cardTable tr td:hover{
     height: 32px;
     vertical-align: middle;
     margin: 0 10px 0 0;*/
-    transition: .5s;
 }
 
 .blurry-bg{
