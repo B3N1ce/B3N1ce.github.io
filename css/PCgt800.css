@@ -241,8 +241,8 @@ ul.header-user-menu > li > a > div:hover{
 
 .content-wrapper{
     overflow: hidden;
-    margin: 60px 0 0 250px;
-    padding: 5px;
+    margin: 60px 0 0 260px;
+    padding: 10px;
     transition: .5s;
 }
 
@@ -255,11 +255,11 @@ ul.header-user-menu > li > a > div:hover{
 .sidemenu{
     position: fixed;
     z-index: 99;
-    top: 60px;
-    bottom: 0;
-    left: 0;
+    top: 70px;
+    bottom: 10px;
+    left: 10px;
     width: 250px;
-    border-radius: 0;
+    border-radius: 10px;
     /*background: rgba(255,255,255,0.6);*/
     /*background: repeating-linear-gradient(to bottom right,rgba(255,255,255,.6) 25%,rgba(255,255,255,0.8) 30%, rgba(255,255,255,.6) 60%);*/
     box-shadow: 0 0 16px 0 rgba(0,0,0,0.5), inset 0 0 16px 0 rgba(255,255,255,0.8);

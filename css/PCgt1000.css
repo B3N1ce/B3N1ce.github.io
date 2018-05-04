@@ -365,14 +365,14 @@ ul.header-user-menu > li > a > div:hover{
 .cardTableSeparate{
     transition: .5s;
     width: 100%;
-    width: calc(100% + 10px);
-    margin: 0 0 50px -5px;
+    width: calc(100% + 20px);
+    margin: 0 0 50px -10px;
 }
 
 .cardTableSeparate > table{
     width: 100%;
     border-collapse: separate;
-    border-spacing: 5px;
+    border-spacing: 10px;
     transition: .5s;
 }
 
