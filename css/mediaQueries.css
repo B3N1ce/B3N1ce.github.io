@@ -12,10 +12,10 @@ and open the template in the editor.
 
 @import "PCgt1200.css"  only screen and (min-width: 1200px);
 @import "PCgt1000.css"   only screen and (min-width: 1000px) and  (max-width: 1199px);
-/*@import "PCgt800.css"   only screen and (min-width: 800px) and  (max-width: 999px);*/
-@import "PCgt700.css"   only screen and (min-width: 700px) and  (max-width: 999px);
-@import "lt700.css"     only screen and (min-width: 471px) and  (max-width: 699px);
-@import "lt470.css"     only screen and                         (max-width: 470px);
+@import "PCgt800.css"   only screen and (min-width: 880px) and  (max-width: 999px);
+@import "PCgt700.css"   only screen and (min-width: 700px) and  (max-width: 879px);
+@import "lt700.css"     only screen and (min-width: 500px) and  (max-width: 699px);
+@import "lt470.css"     only screen and                         (max-width: 499px);
 
 html{
     line-height: normal;
