@@ -9,11 +9,43 @@ and open the template in the editor.
         <title>EDI Tracking - Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="css/mediaQueries.css">
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link type="text/css" rel="stylesheet" href="css/mediaQueries.css" />
+        <link type="text/css" rel="stylesheet" href="css/login.css" />
         <link rel="shortcut icon" href="img/Icon_transparent.ico" />
     </head>
     <body>
-        <div>Landing Page</div>
-        <a href="webEdiDashboard.html">weiter zum Dashboard</a>
+        <div class="header">
+            <h1><img src="img/wasi_logo_divisions_transparent.png" /><span class="h1--gray">.web</span> Dashboard</h1>
+            
+        </div>
+        <div class="content-wrapper">
+            
+            <div class="centeredBox blurry-bg">
+                <form action="webEdiDashboard.html">
+                    <h1>Login</h1>
+                    <table>
+                        <tr>
+                            <td><label></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Benutzername" /></td>
+                        </tr>
+                        <tr>
+                            <td><label></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" placeholder="Passwort" /></td>
+                        </tr>
+                        <tr>
+                            <td><hr /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Login" /></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
     </body>
 </html>

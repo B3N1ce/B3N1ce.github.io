@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24.04.2018, 15:20:11
+    Author     : Jess
+*/
+
+.header-user{
+    right: 5px;
+}
+
+.content-wrapper{
+    margin: 60px 0 0 260px;
+    padding: 10px;
+}
+
+.navigationMenu{
+    top: 70px;
+    left: 10px;
+    width: 250px;
+    font-size: 14px;
+}
+
+.searchbar{
+    width: 230px;
+}
+
+.searchbar > input[type=text]{
+    width: 180px;
+}
+
+.cardTableSeparate{
+    width: calc(100% + 20px);
+    margin: 20px 0 50px -10px;
+}
+
+.cardTableSeparate > table{
+    border-spacing: 10px;
+}
+
+.cardTableItem-Icon{
+    margin: 15px;
+}
+
+.cardTableItem-Text{
+    margin: 10px;
+}
+
+table.cardTable{
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.imgLogo-inline--big{
+    width: 24px;
+    height: 24px;
+}

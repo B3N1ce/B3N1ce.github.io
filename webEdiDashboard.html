@@ -9,17 +9,18 @@ and open the template in the editor.
         <title>WASI.web Dashboard</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
         <link type="text/css" rel="stylesheet" href="css/mediaQueries.css" />
         <link rel="shortcut icon" href="img/Icon_transparent.ico" />
     </head>
-    <body>
-        <div class="sidemenu blurry-bg">
+    <body onclick="handleUserMenuClickEvent();">
+        <div class="navigationMenu blurry-bg">
             <h1>EDI</h1>
             <form class="searchbar">
                 <input type="text" value="" placeholder="Suchbegriff eingeben" />
                 <input type="submit" value="►" />
             </form>
-            <div class="sidemenu-content">
+            <div class="navigationMenu-content">
                 <div class="list-element--active"><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--big" src="img/if_cluster-data-group-organize_2205240.png" /><span>EDI</span></div></a></div>
                 <div><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--big" src="img/if_bag_514940.png" /><span>Webshop</span></div></a></div>
                 <div><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--big" src="img/if_smartphone-01_186385.png" /><span>App</span></div></a></div>
@@ -35,10 +36,10 @@ and open the template in the editor.
                 <div class="header-user-text">Admin</div>
                 <div class="header-user-menuButton"></div>
                 <ul class="header-user-menu">
-                    <li><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--small" src="" />Kontoeinstellungen</div></a></li>
-                    <li><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--small" src="" />menuItem2</div></a></li>
-                    <li><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--small" src="" />menuItem3</div></a></li>
-                    <li class="list-element--active"><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--small" src="img/if_gnome-session-logout_30682.png" />Logout</div></a></li>
+                    <li><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--small" src="" alt="" />Kontoeinstellungen</div></a></li>
+                    <li><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--small" src="" alt="" />Benachrichtigungen</div></a></li>
+                    <li><a href="webEDIDashboard.html"><div><img class="imgLogo-inline--small" src="" alt="" />menuItem3</div></a></li>
+                    <li class="list-element--active"><a href="index.html"><div><img class="imgLogo-inline--small" src="img/if_gnome-session-logout_30682.png" />Logout</div></a></li>
                 </ul>
             </div>
         </div>
@@ -237,5 +238,13 @@ and open the template in the editor.
         
         <!-- Script Section -->
         <script type="text/javascript" src="js/IEfixedScrollFix.js"></script>
+        <script>
+            function handleUserMenuClickEvent () {
+                var headerUserMenu = document.getElementsByClassName("header-user-menu")[0];
+                if (headerUserMenu.clientHeight > 10){
+                    //Touch optimierung click unterbinden
+                }
+            }
+        </script>
     </body>
 </html>

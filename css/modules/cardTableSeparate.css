@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08.05.2018, 14:19:43
+    Author     : Jess
+*/
+
+.cardTableSeparate{
+    transition: .5s;
+    width: 100%;
+    width: calc(100% + 30px);
+    margin: 0 0 0 -15px;
+}
+
+.cardTableSeparate > table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px;
+    transition: .5s;
+}
+
+.cardTableSeparateItem{
+    transition: .2s;
+/*    background: white;
+    background: rgba(255,255,255,0.7);*/
+    /*background: linear-gradient(to bottom right,rgba(255,255,255,0.6) 40%,rgba(255,255,255,0.8) 45%, rgba(255,255,255,0.6));*/
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 0; /* to keep all cards same width... */
+    max-height: 0; /* ...and height */
+    padding: 0;
+}
+
+.cardTableSeparateItem > div{
+    transition: .2s;
+}
+
+.cardTableSeparateItem:hover > div{
+    background: rgba(255,255,255,0.6);
+}
