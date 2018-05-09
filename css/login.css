@@ -8,20 +8,43 @@ and open the template in the editor.
     Author     : Jess
 */
 
+@keyframes slideInFromTop{
+    0%{
+        margin-top: -1000px
+    }
+    100%{
+        margin-top: calc(50vh + 30px - 145px);
+    }
+}
+
 hr{
     margin: 20px 0;
     padding: 0;
 }
 
+body{
+    transition: none;
+}
+
+.header > h1{
+    transition: .5s;
+}
+
 .content-wrapper{
-    margin: 160px auto 0 auto;
-    width: 60%;
-    overflow: visible;
+    margin: 0;
+    padding: 0;
 }
 
 .centeredBox{
     border-radius: 10px;
     box-shadow: 0 0 16px 0 rgba(0,0,0,0.5), inset 0 0 16px 0 rgba(255,255,255,0.8), inset 0 0 4px 2px #fff;
+    width: 60%;
+    margin: auto;
+    margin-top: calc(50vh + 30px - 145px);
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.centeredBox{
     
 }
 
