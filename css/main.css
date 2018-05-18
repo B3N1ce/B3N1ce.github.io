@@ -12,6 +12,21 @@ and open the template in the editor.
 /*@import "https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Playfair+Display|Raleway|Roboto";*/
 @import "https://fonts.googleapis.com/css?family=Open+Sans";
 
+@keyframes setInit{
+    100%{
+        left: 100%;
+    }
+}
+
+@keyframes changeAnimationContentWrapper{
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
 :root{
     
 }
@@ -37,11 +52,17 @@ body{
     background-position: center;
     transition: .5s;
     min-width: 300px;
+    overflow-x: hidden;
 }
 
 a{
     text-decoration: none;
     color: #3c434f;
+    cursor: default;
+}
+
+a:link{
+    cursor: pointer;
 }
 
 .blurry-bg{
@@ -60,9 +81,11 @@ a{
 }
 
 .content-wrapper{
+    position: relative;
     margin: 60px 0 0 330px;
     padding: 30px;
     transition: .5s;
+    /*animation: linear setInit .01s 1 forwards, ease-out changeAnimationContentWrapper .3s  1 forwards .3s;*/
 }
 
 .imgLogo-inline--small{

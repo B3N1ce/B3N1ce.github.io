@@ -8,9 +8,18 @@ and open the template in the editor.
     Author     : Jess
 */
 
+@keyframes changeAnimationNavigationMenu{
+    0%{
+        margin-top: 100%;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
 .navigationMenu{
     position: fixed;
-    z-index: 99;
+    z-index: 97;
     top: 90px;
     bottom: 0;
     left: 30px;
@@ -20,6 +29,7 @@ and open the template in the editor.
     /*background: repeating-linear-gradient(to bottom right,rgba(255,255,255,.6) 25%,rgba(255,255,255,0.8) 30%, rgba(255,255,255,.6) 60%);*/
     overflow: hidden;
     transition: .5s;
+    /*animation: .3s changeAnimationNavigationMenu 1 ease-out;*/
 }
 
 .navigationMenu h1{
@@ -58,6 +68,14 @@ and open the template in the editor.
 .navigationMenu-content > div > a > div:hover{
     background: rgba(255,255,255,0.6);
     text-indent: 10px;
+}
+
+.navigationMenu-content > div:not(.list-element--active) > a > div:active{
+    background: #777;
+    text-shadow: none;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 0 32px rgba(0,0,0,0.5);
 }
 
 .list-element--active > a > div{

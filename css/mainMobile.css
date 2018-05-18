@@ -46,6 +46,7 @@ and open the template in the editor.
     right: 0px;
     border-radius: 10px;
     border: 0 solid transparent;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
 .header-user-text{
@@ -153,4 +154,8 @@ table.cardTable tr th{
     height: 30px;
     width: 30px;
     margin: 0;
+}
+
+.body--userMenuStatic .header-user-menu{
+    border: 1px solid #ccc;
 }
