@@ -1,19 +1,111 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b3n1ce | Portfolio & Projekte</title>
+    <style>
+        /* Modern Reset & Fonts */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Hauptcontainer */
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        /* Profil / Header */
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+
+        /* Kategorien (Überschriften) */
+        h2 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            margin: 25px 0 12px 0;
+            text-align: left;
+            border-left: 3px solid #818cf8;
+            padding-left: 10px;
+        }
+
+        /* Link-Karten (Buttons) */
+        .project-link {
+            display: block;
+            background: rgba(255, 255, 255, 0.05);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-align: left;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hover-Effekte für die Links */
+        .project-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #38bdf8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(56, 189, 248, 0.2);
+        }
+
+        /* Ein kleiner Pfeil am Ende des Links */
+        .project-link::after {
+            content: ' →';
+            float: right;
+            color: #38bdf8;
+            transition: transform 0.3s ease;
+        }
+
+        .project-link:hover::after {
+            transform: translateX(4px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>b3n1ce Hub</h1>
+        
         <h2>Projects</h2>
-        <a href="https://b3n1ce.github.io/AuroraStudio/">Aurora Studio</a>
+        <a class="project-link" href="https://b3n1ce.github.io/AuroraStudio/">Aurora Studio</a>
+        
         <h2>Random Stuff</h2>
-        <a href="https://b3n1ce.github.io/randomartgenerator/">Random Art Generator</a>
-    </body>
+        <a class="project-link" href="https://b3n1ce.github.io/randomartgenerator/">Random Art Generator</a>
+    </div>
+
+</body>
 </html>
